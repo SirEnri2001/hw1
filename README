@@ -1,0 +1,42 @@
+Full name:  Xinghua Han
+Penn ID:    21365495
+
+Did you personally write _all_ the code you are submitting
+(other than code provided by the instructor)?
+[x] Yes 
+[ ] No
+
+Did you copy any code from the Internet, or from classmates?
+[x] Yes, I copied example codes from Oracle docs https://docs.oracle.com/javase/tutorial/datetime/iso/queries.html
+[ ] No
+
+Did you collaborate with anyone on this assignment?
+[ ] Yes, I worked with __________________________________________________
+[x] No
+
+Did you use any AI-based tools, such as ChatGPT or similar?
+[ ] Yes, I used __________________________________________________
+[x] No
+
+Will you verify that your submission compiles, using the commands
+in the handout, and will you submit ONLY if this is the case?
+[x] Yes, I will make sure it compiles
+[ ] No
+
+Is your solution complete, or are there features that you did not 
+implement and that we should not even attempt to grade?
+[x] My solution is complete
+[ ] I did not implement __________________________________________________
+
+Did you implement any of the extra-credit features? 
+[ ] No, I did not implement any extra-credit features.
+[x] I implemented the process of "304 Not Modified" Header and using of Theadpool Executor
+
+Approximately how much time did you spend on this assignment (without EC)?
+10 hour(s)
+
+Which parts of this assignment were the hardest, and/or took the most time?
+I encountered an unexpected behavior when using BufferedReader and PushbackReader. When I read the header lines using BufferedReader, the body lines will be read and stored in internal buffer of BufferedReader. So I have to switch back to use InputStream and read byte by byte.
+
+Optional: Do you have any suggestions for improving this assignment?
+Although we don't have to implement a complete HTTP server according to RFC document, we still have some of the problems in specifications. For example, when an HTTP error code is sent, Server can either shut down the connection or remain for next header. Also, we have to consider "Connection" item in header. In the test, we don't have this item set as "keep-alive", but we do need to persist the connection.
